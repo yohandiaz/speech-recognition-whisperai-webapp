@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio to Text</title>
+</head>
+<body>
+    <h1>Audio to Text</h1>
+    <form method="POST" action="{{ url_for('audio_to_text') }}" enctype="multipart/form-data">
+        <input type="file" name="audio_file">
+        <br><br>
+        <input type="submit" value="Transcribe">
+    </form>
+</body>
+</html>
